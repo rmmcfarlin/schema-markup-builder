@@ -1,0 +1,103 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Shop New {{brand_name}}",
+  "url": "https://tmraudio.com/new-{{brand_url_name}}/",
+  "headline": "Shop New {{brand_name}} at The Music Room",
+  "description": "{{meta_description}}",
+  "keywords": [
+    "keyword1",
+    "keyword2",
+    "keyword3",
+    "keyword4",
+    "keyword5"
+  ],
+  "mainEntity": [
+    {
+      "@type": "Brand",
+      "name": "{{brand_name}}",
+      "url": "https://tmraudio.com/new-{{brand_url_name}}/"
+    },
+    {
+      "@type": "ItemList",
+      "name": "New {{brand_name}} Products",
+      "description": "A dynamic collection page showcasing currently available new {{brand_name}} products at The Music Room.",
+      "itemListOrder": "https://schema.org/ItemListOrderDescending"
+    }
+  ],
+  "about": {
+    "@type": "Organization",
+    "name": "The Music Room",
+    "url": "https://tmraudio.com/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://cdn11.bigcommerce.com/s-6naz0isypk/images/stencil/original/image-manager/music-room-logo-stacked-2000-1000.png?t=1717115722"
+    },
+    "sameAs": [
+      "https://www.facebook.com/tmraudio",
+      "https://www.instagram.com/tmr_audio",
+      "https://www.youtube.com/@tmr_audio",
+      "https://x.com/tmraudio",
+      "https://www.threads.net/@tmr_audio"
+    ]
+  },
+  "potentialAction": [
+    {
+      "@type": "ViewAction",
+      "name": "Browse New {{brand_name}}",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://tmraudio.com/new-synergistic-research/",
+        "inLanguage": "en-US",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "actionStatus": "http://schema.org/ActiveActionStatus"
+    },
+    {
+      "@type": "SearchAction",
+      "name": "Search {{brand_name}} on TMR",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://tmraudio.com/search?q={search_term_string}+{{brand_url_search_term}}",
+        "inLanguage": "en-US",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "query-input": "required name=search_term_string"
+    }
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Music Room",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://cdn11.bigcommerce.com/s-6naz0isypk/images/stencil/original/image-manager/music-room-logo-stacked-2000-1000.png?t=1717115722"
+    }
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https://tmraudio.com/",
+          "name": "Home"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@id": "https://tmraudio.com/new-{{brand_url_name}}/",
+          "name": "New {{brand_name}}"
+        }
+      }
+    ]
+  }
+}
